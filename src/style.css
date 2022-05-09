@@ -1,0 +1,40 @@
+body{
+    background-color: #5b9e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+    margin: 0 auto;
+}
+.container{
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.keyboard{
+    width: 1070px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 400px;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+}
+.buttonKey{
+    width: 60px;
+    background-color: rgba(223, 37, 37, 0.959);
+    border: 2px solid black;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.double{
+
+}

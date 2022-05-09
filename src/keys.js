@@ -1,4 +1,4 @@
-const keysID = [
+const keys = [
   {
     key: 'Backquote',
     ru: {
@@ -14,6 +14,7 @@ const keysID = [
       capsUppercase: '~',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit1',
@@ -30,6 +31,7 @@ const keysID = [
       capsUppercase: '!',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit2',
@@ -46,6 +48,7 @@ const keysID = [
       capsUppercase: '@',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit3',
@@ -62,6 +65,7 @@ const keysID = [
       capsUppercase: '#',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit4',
@@ -78,6 +82,7 @@ const keysID = [
       capsUppercase: '$',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit5',
@@ -94,6 +99,7 @@ const keysID = [
       capsUppercase: '%',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit6',
@@ -110,6 +116,7 @@ const keysID = [
       capsUppercase: '^',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit7',
@@ -126,6 +133,7 @@ const keysID = [
       capsUppercase: '&',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit8',
@@ -142,6 +150,7 @@ const keysID = [
       capsUppercase: '*',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit9',
@@ -158,6 +167,7 @@ const keysID = [
       capsUppercase: '(',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Digit0',
@@ -174,6 +184,7 @@ const keysID = [
       capsUppercase: ')',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Minus',
@@ -190,6 +201,7 @@ const keysID = [
       capsUppercase: '_',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Equal',
@@ -206,6 +218,7 @@ const keysID = [
       capsUppercase: '+',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Backspace',
@@ -222,6 +235,7 @@ const keysID = [
       capsUppercase: 'backspace',
     },
     special: true,
+    double: true,
   },
   {
     key: 'Tab',
@@ -238,6 +252,7 @@ const keysID = [
       capsUppercase: 'tab',
     },
     special: true,
+    double: true,
   },
   {
     key: 'KeyQ',
@@ -253,6 +268,7 @@ const keysID = [
       capsLowercase: 'Q',
       capsUppercase: 'q',
     },
+    double: false,
   },
   {
     key: 'KeyW',
@@ -268,6 +284,7 @@ const keysID = [
       capsLowercase: 'W',
       capsUppercase: 'w',
     },
+    double: false,
   },
   {
     key: 'KeyE',
@@ -283,6 +300,7 @@ const keysID = [
       capsLowercase: 'E',
       capsUppercase: 'e',
     },
+    double: false,
   },
   {
     key: 'KeyR',
@@ -298,6 +316,7 @@ const keysID = [
       capsLowercase: 'R',
       capsUppercase: 'r',
     },
+    double: false,
   },
   {
     key: 'KeyT',
@@ -313,6 +332,7 @@ const keysID = [
       capsLowercase: 'T',
       capsUppercase: 't',
     },
+    double: false,
   },
   {
     key: 'KeyY',
@@ -328,6 +348,7 @@ const keysID = [
       capsLowercase: 'Y',
       capsUppercase: 'y',
     },
+    double: false,
   },
   {
     key: 'KeyU',
@@ -343,6 +364,7 @@ const keysID = [
       capsLowercase: 'U',
       capsUppercase: 'u',
     },
+    double: false,
   },
   {
     key: 'KeyI',
@@ -358,6 +380,7 @@ const keysID = [
       capsLowercase: 'I',
       capsUppercase: 'i',
     },
+    double: false,
   },
   {
     key: 'KeyO',
@@ -373,6 +396,7 @@ const keysID = [
       capsLowercase: 'O',
       capsUppercase: 'o',
     },
+    double: false,
   },
   {
     key: 'KeyP',
@@ -388,6 +412,7 @@ const keysID = [
       capsLowercase: 'P',
       capsUppercase: 'p',
     },
+    double: false,
   },
   {
     key: 'BracketLeft',
@@ -404,6 +429,7 @@ const keysID = [
       capsUppercase: '{',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'BracketRight',
@@ -420,6 +446,7 @@ const keysID = [
       capsUppercase: '}',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Backslash',
@@ -436,22 +463,7 @@ const keysID = [
       capsUppercase: '|',
     },
     shifted: true,
-  },
-  {
-    key: 'Delete',
-    ru: {
-      lowercase: 'Del',
-      uppercase: 'Del',
-      capsLowercase: 'Del',
-      capsUppercase: 'Del',
-    },
-    en: {
-      lowercase: 'Del',
-      uppercase: 'Del',
-      capsLowercase: 'Del',
-      capsUppercase: 'Del',
-    },
-    special: true,
+    double: false,
   },
   {
     key: 'CapsLock',
@@ -468,6 +480,7 @@ const keysID = [
       capsUppercase: 'capslock',
     },
     special: true,
+    double: true,
   },
   {
     key: 'KeyA',
@@ -483,6 +496,7 @@ const keysID = [
       capsLowercase: 'A',
       capsUppercase: 'a',
     },
+    double: false,
   },
   {
     key: 'KeyS',
@@ -498,6 +512,7 @@ const keysID = [
       capsLowercase: 'S',
       capsUppercase: 's',
     },
+    double: false,
   },
   {
     key: 'KeyD',
@@ -513,6 +528,7 @@ const keysID = [
       capsLowercase: 'D',
       capsUppercase: 'd',
     },
+    double: false,
   },
   {
     key: 'KeyF',
@@ -528,6 +544,7 @@ const keysID = [
       capsLowercase: 'F',
       capsUppercase: 'f',
     },
+    double: false,
   },
   {
     key: 'KeyG',
@@ -543,6 +560,7 @@ const keysID = [
       capsLowercase: 'G',
       capsUppercase: 'g',
     },
+    double: false,
   },
   {
     key: 'KeyH',
@@ -558,6 +576,7 @@ const keysID = [
       capsLowercase: 'H',
       capsUppercase: 'h',
     },
+    double: false,
   },
   {
     key: 'KeyJ',
@@ -573,6 +592,7 @@ const keysID = [
       capsLowercase: 'J',
       capsUppercase: 'j',
     },
+    double: false,
   },
   {
     key: 'KeyK',
@@ -588,6 +608,7 @@ const keysID = [
       capsLowercase: 'K',
       capsUppercase: 'k',
     },
+    double: false,
   },
   {
     key: 'KeyL',
@@ -603,6 +624,7 @@ const keysID = [
       capsLowercase: 'L',
       capsUppercase: 'l',
     },
+    double: false,
   },
   {
     key: 'Semicolon',
@@ -619,6 +641,7 @@ const keysID = [
       capsUppercase: ':',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Quote',
@@ -635,6 +658,7 @@ const keysID = [
       capsUppercase: '"',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Enter',
@@ -651,6 +675,7 @@ const keysID = [
       capsUppercase: 'enter',
     },
     special: true,
+    double: true,
   },
 
   {
@@ -668,6 +693,7 @@ const keysID = [
       capsUppercase: 'shift',
     },
     special: true,
+    double: true,
   },
   {
     key: 'KeyZ',
@@ -683,6 +709,7 @@ const keysID = [
       capsLowercase: 'Z',
       capsUppercase: 'z',
     },
+    double: false,
   },
   {
     key: 'KeyX',
@@ -698,6 +725,7 @@ const keysID = [
       capsLowercase: 'X',
       capsUppercase: 'x',
     },
+    double: false,
   },
   {
     key: 'KeyC',
@@ -713,6 +741,7 @@ const keysID = [
       capsLowercase: 'C',
       capsUppercase: 'c',
     },
+    double: false,
   },
   {
     key: 'KeyV',
@@ -728,6 +757,7 @@ const keysID = [
       capsLowercase: 'V',
       capsUppercase: 'v',
     },
+    double: false,
   },
   {
     key: 'KeyB',
@@ -743,6 +773,7 @@ const keysID = [
       capsLowercase: 'B',
       capsUppercase: 'b',
     },
+    double: false,
   },
   {
     key: 'KeyN',
@@ -758,6 +789,7 @@ const keysID = [
       capsLowercase: 'N',
       capsUppercase: 'n',
     },
+    double: false,
   },
   {
     key: 'KeyM',
@@ -773,6 +805,7 @@ const keysID = [
       capsLowercase: 'M',
       capsUppercase: 'm',
     },
+    double: false,
   },
   {
     key: 'Comma',
@@ -789,6 +822,7 @@ const keysID = [
       capsUppercase: '<',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Period',
@@ -805,6 +839,7 @@ const keysID = [
       capsUppercase: '>',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'Slash',
@@ -821,6 +856,7 @@ const keysID = [
       capsUppercase: '?',
     },
     shifted: true,
+    double: false,
   },
   {
     key: 'ArrowLeft',
@@ -836,6 +872,7 @@ const keysID = [
       capsLowercase: '←',
       capsUppercase: '←',
     },
+    double: false,
   },
   {
     key: 'ArrowUp',
@@ -851,6 +888,7 @@ const keysID = [
       capsLowercase: '↑',
       capsUppercase: '↑',
     },
+    double: false,
   },
   {
     key: 'ShiftRight',
@@ -867,6 +905,7 @@ const keysID = [
       capsUppercase: 'shift',
     },
     special: true,
+    double: false,
   },
   {
     key: 'ControlLeft',
@@ -883,22 +922,7 @@ const keysID = [
       capsUppercase: 'ctrl',
     },
     special: true,
-  },
-  {
-    key: 'MetaLeft',
-    ru: {
-      lowercase: 'win',
-      uppercase: 'win',
-      capsLowercase: 'win',
-      capsUppercase: 'win',
-    },
-    en: {
-      lowercase: 'win',
-      uppercase: 'win',
-      capsLowercase: 'win',
-      capsUppercase: 'win',
-    },
-    special: true,
+    double: false,
   },
   {
     key: 'AltLeft',
@@ -915,6 +939,7 @@ const keysID = [
       capsUppercase: 'alt',
     },
     special: true,
+    double: false,
   },
   {
     key: 'Space',
@@ -931,6 +956,7 @@ const keysID = [
       capsUppercase: 'space',
     },
     special: true,
+    double: true,
   },
   {
     key: 'AltRight',
@@ -947,22 +973,7 @@ const keysID = [
       capsUppercase: 'alt',
     },
     special: true,
-  },
-  {
-    key: 'MetaRight',
-    ru: {
-      lowercase: 'win',
-      uppercase: 'win',
-      capsLowercase: 'win',
-      capsUppercase: 'win',
-    },
-    en: {
-      lowercase: 'win',
-      uppercase: 'win',
-      capsLowercase: 'win',
-      capsUppercase: 'win',
-    },
-    special: true,
+    double: false,
   },
   {
     key: 'ControlRight',
@@ -979,6 +990,7 @@ const keysID = [
       capsUppercase: 'ctrl',
     },
     special: true,
+    double: false,
   },
   {
     key: 'ArrowDown',
@@ -994,6 +1006,7 @@ const keysID = [
       capsLowercase: '↓',
       capsUppercase: '↓',
     },
+    double: false,
   },
   {
     key: 'ArrowRight',
@@ -1009,7 +1022,8 @@ const keysID = [
       capsLowercase: '→',
       capsUppercase: '→',
     },
+    double: false,
   },
 ];
 
-export default keysID;
+export default keys;
