@@ -1,11 +1,11 @@
 import keys from './keys.js';
 
-let num = 0;
+let order = 0;
 class KeyButton {
   // constructor
   constructor(nameOfClass, tagName) {
     this.nameOfClass = nameOfClass;
-    this.id = keys[num].key;
+    this.id = keys[order].key;
     this.tagName = tagName;
   }
 
@@ -30,8 +30,8 @@ class KeyButton {
     this.createButton();
     this.addNameOfClass();
     this.addAttribute();
-    this.element.textContent = `${keys[num].en.lowercase}`;
-    num += 1;
+    this.element.textContent = `${keys[order].en.lowercase}`;
+    order += 1;
     return this.element;
   }
 }
@@ -59,7 +59,7 @@ for (let i = 0; i < buttons.length; i += 1) {
     buttons[i].classList.add('space');
   }
 }
-
+// creating textarea
 const textarea = document.createElement('textarea');
 textarea.classList.add('textarea');
 container.prepend(textarea);
