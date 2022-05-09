@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 50px;
 }
 .keyboard{
     width: 1070px;
