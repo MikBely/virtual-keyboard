@@ -858,22 +858,7 @@ const keys = [
     shifted: true,
     double: false,
   },
-  {
-    key: 'ArrowLeft',
-    ru: {
-      uppercase: '←',
-      lowercase: '←',
-      capsLowercase: '←',
-      capsUppercase: '←',
-    },
-    en: {
-      lowercase: '←',
-      uppercase: '←',
-      capsLowercase: '←',
-      capsUppercase: '←',
-    },
-    double: false,
-  },
+
   {
     key: 'ArrowUp',
     ru: {
@@ -990,6 +975,21 @@ const keys = [
       capsUppercase: 'ctrl',
     },
     special: true,
+    double: false,
+  }, {
+    key: 'ArrowLeft',
+    ru: {
+      uppercase: '←',
+      lowercase: '←',
+      capsLowercase: '←',
+      capsUppercase: '←',
+    },
+    en: {
+      lowercase: '←',
+      uppercase: '←',
+      capsLowercase: '←',
+      capsUppercase: '←',
+    },
     double: false,
   },
   {
