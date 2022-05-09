@@ -2,20 +2,17 @@ import keys from './keys.js';
 
 let order = 0;
 class KeyButton {
-  // constructor
   constructor(nameOfClass, tagName) {
     this.nameOfClass = nameOfClass;
     this.id = keys[order].key;
     this.tagName = tagName;
   }
 
-  // Create div of button
   createButton() {
     this.element = document.createElement('div');
     return this.element;
   }
 
-  // All buttons have the same className
   addNameOfClass() {
     this.element.classList.add(this.nameOfClass);
     return this.element;
@@ -35,7 +32,7 @@ class KeyButton {
     return this.element;
   }
 }
-// creating DOM keyboard
+
 const body = document.querySelector('body');
 const container = document.createElement('div');
 container.classList.add('container');
@@ -59,7 +56,7 @@ for (let i = 0; i < buttons.length; i += 1) {
     buttons[i].classList.add('space');
   }
 }
-// creating textarea
+
 const textarea = document.createElement('textarea');
 textarea.classList.add('textarea');
 container.prepend(textarea);
